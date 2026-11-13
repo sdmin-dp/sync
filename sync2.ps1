@@ -6,9 +6,6 @@ Write-Host "==========================================" -ForegroundColor Magenta
 Write-Host "       🚀 GitHub SSH 自动化同步工具" -ForegroundColor Magenta
 Write-Host "==========================================" -ForegroundColor Magenta
 
-# 在.gitnore里面忽略此脚本
-Write-Host "正在更改.gitignore文件"; Add-Content -Path ".gitignore" -Value "sync.ps1" -Encoding utf8
-Add-Content -Path ".gitignore" -Value "sync2.ps1" -Encoding utf8
 
 
 # 1. 强制关闭可能冲突的凭据助手，确保走 SSH
